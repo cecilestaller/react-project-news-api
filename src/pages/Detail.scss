@@ -1,0 +1,29 @@
+.detailArticle_wrap {
+    padding: 5%;
+    a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: inherit;
+        background-color: #FFF5C2;
+        padding: 4px 8px;
+        border-radius: 8px;
+        
+        &:hover{
+            font-weight: bold;
+            background-color: #F4F27E;
+        }
+    }
+
+    img {
+        max-width: 65%;
+        display: block;
+        margin-block: 2vh;
+    }
+    h2 {
+        margin-bottom: 2vh;
+        font-size: 1.75rem;
+    }
+    p {
+        margin-bottom: 2vh;
+    }
+}

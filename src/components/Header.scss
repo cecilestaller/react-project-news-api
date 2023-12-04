@@ -1,0 +1,18 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #FFF5C2;
+        padding: 8px;
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.25rem;
+        }
+        .active {
+            background-color: rgba(211, 211, 211, 0.468);
+            padding: 4px;
+            border-radius: 4px;
+        }
+    }
+}
