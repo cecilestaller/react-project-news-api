@@ -2,10 +2,7 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import './Detail.scss'
 
 const Detail = () => {
-
     const article = useLocation().state.singleArticleObj;
-    // console.log(useLocation());
-    // console.log(article);
     return (  
         <article className="detailArticle_wrap">
             <Link to='/'>go back</Link>

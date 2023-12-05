@@ -16,25 +16,9 @@ const Home = () => {
         e.preventDefault();
         console.log('you clicked submit');
     }
-
-    // const fetchAndSearchNewsMatch = (e) => {
-    //     setKeywordInput(keywordInput);
-    //     setLanguage(language);
-    // }
-
-
-    // useEffect(() => {
-    //     fetch(`https://newsapi.org/v2/everything?q=${keywordInput}&language=${language}&apiKey=${myApiKey}`)
-    //         .then(response => {
-    //             if (response.ok === false){
-    //                 throw new Error('something went wrong');
-    //             }
-    //             return response.json()
-    //         })
-    //         .then(newsArr => setNewsData(newsArr))
-    //         .catch(error => console.log(error))
-    // }, [keywordInput, language])
-            
+    
+    // fetch findet in onClick function statt, alternativ könnte fetch aber auch in neue kompnente ausgelagert werden, dann könnte useEffect benutzt werden, wenn states der userinputs als props mit onclick an komponente übergeben werden, dann können states der inputFelder zur überwachung in dependency array des useEffects (Vorteil: trotz useEffect wird nur gefetcht, wenn user mit seiner eingabe fertig ist)
+    
     const fetchAndSearchNewsMatch = () => {
         fetch(`https://newsapi.org/v2/everything?q=${keywordInput}&language=${language}&apiKey=${import.meta.env.VITE_API_KEY}`)
             .then(response => {
@@ -46,7 +30,7 @@ const Home = () => {
             .then(newsArr => setNewsData(newsArr))
             .catch(error => console.log(error))
     }
-    console.log('fetch result: ', newsData);
+    // console.log('fetch result: ', newsData);
 
     return (  
         <section className="home_wrap">
