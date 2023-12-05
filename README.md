@@ -17,7 +17,7 @@
 
 ## Demo Link
 
-https://news-api-project-cs.netlify.app
+in this project i worked with the free developer version of the news-api, therefore the page cannot be deployed. To test my project, you must first clone it and enter your personal API key in line 23 of Home.jsx instead of "import.meta.env.VITE_API_KEY". You can generate the API key via https://newsapi.org/ You can then test the page locally.
 
 ## Screenshots 📸
 
